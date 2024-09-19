@@ -1,0 +1,47 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+#topBar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+
+button {
+    background-color: #4285f4; /* Google-like button color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #357ae8;
+}
+
+#chatWindow {
+    margin-top: 20px;
+}
+
+#messageArea {
+    border: 1px solid #ccc;
+    min-height: 200px;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.message {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+.spinner {
+    display: none;
+}
