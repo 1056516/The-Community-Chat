@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>The Community</title>
+</head>
+<body>
+    <div id="topBar">
+        <button id="homeButton">Home</button>
+        <button id="joinButton">Join</button>
+    </div>
+    
+    <div id="mainContent">
+        <h1>The Community</h1>
+        <button id="newChatButton">New chat</button>
+        <div id="toolbar" style="display: none;">
+            <p>Chat Code: <span id="chatUrl">https://random-chat-code.com</span></p>
+        </div>
+
+        <div id="joinMeet" style="display: none;">
+            <h2>Join a Meet</h2>
+            <input type="text" id="chatInput" placeholder="Enter chat URL">
+            <button id="joinMeetButton">Join</button>
+            <div id="joiningMessage" style="display: none;">
+                <p>Joining: <span id="joiningChatUrl"></span></p>
+                <button id="waitingButton">Joining, be patient...</button>
+                <div id="spinner" style="display: none;">🔄</div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="chatWindow" style="display: none;">
+        <div id="messageArea"></div>
+        <input type="text" id="messageInput" placeholder="Type a message...">
+        <button id="sendMessage">✉️</button>
+        <button id="callButton">📞</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
